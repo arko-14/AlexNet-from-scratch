@@ -1,7 +1,7 @@
 # Comparison of two architectures
 # AlexNet-from-scratch
 
-# Cats vs Dogs Classification: LeNet vs. Modern CNN
+# Cats vs Dogs Classification: LeNet vs. AlexNet
 
 This repository contains implementations and experiments comparing two architectures for classifying cats and dogs:
 
