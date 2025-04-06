@@ -23,7 +23,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 
 ## Architecture Comparison
 
-| Feature | **LeNet** | **Modern CNN** |
+| Feature | **LeNet** | **AlexNet** |
 | --- | --- | --- |
 | **Input Size** | 64×64×3 | 224×224×3 |
 | **Preprocessing** | Rescaling to [0, 1] | Rescaling to [0, 1] + ImageNet normalization |
@@ -32,7 +32,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 | **Parameter Count** | ~60K (lightweight) | ~1M+ (more capacity) |
 | **Training Epochs** | 20 | 20 |
 | **Optimizer** | Adam | Adam |
-| **Validation Accuracy** | ~69% | ~89% |
+| **Validation Accuracy** | ~67% | ~88% |
 | **Inference Speed** | Fast, low computational cost | Slower, higher computational cost |
 | **Ideal Use Case** | Resource-constrained or educational | High-accuracy classification tasks |
 
