@@ -1,1 +1,1 @@
-# AlexNet-from-scratch
+# Comparison of two architectures
