@@ -13,7 +13,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 
 ## Dataset
 
-- **Dataset:** [Cats vs Dogs](https://www.microsoft.com/en-us/download/details.aspx?id=54765)
+- **Dataset:** [Cats vs Dogs](https://www.kaggle.com/datasets/salader/dogs-vs-cats)
 - **Structure:** Images are organized in subdirectories for each class (`/train/cats`, `/train/dogs`, `/test/cats`, `/test/dogs`).
 - **Preprocessing:**
     - **LeNet:** Images resized to **64x64**, rescaled to [0, 1]. Minimal augmentation (random horizontal flip, rotation).
