@@ -1,5 +1,4 @@
 # Comparison of two architectures
-# AlexNet-from-scratch
 
 # Cats vs Dogs Classification: LeNet vs. AlexNet
 
