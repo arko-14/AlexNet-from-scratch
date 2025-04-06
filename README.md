@@ -54,6 +54,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 - **Augmentation:** Same as LeNet for consistency
 - **Model Complexity:** Deeper architecture with additional convolutional layers, BatchNormalization, and Dropout. Achieves higher accuracy (~89%) but requires more computational resources.
 
+**Used batch nomralization and dropout in both the models to prevent overfitting to a extent**
 
 ### Results & Discussion
 - **LeNet:** Offers a lightweight solution with faster training and inference, achieving ~67% validation accuracy. Suitable for learning and low-resource applications.
