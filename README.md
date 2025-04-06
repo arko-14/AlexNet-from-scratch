@@ -6,7 +6,7 @@
 This repository contains implementations and experiments comparing two architectures for classifying cats and dogs:
 
 - **LeNet:** A classic, lightweight architecture originally designed for digit recognition.
-- **Modern CNN (ImageNet-Style Preprocessing):** A deeper convolutional network with advanced preprocessing, inspired by architectures trained on ImageNet.
+- **AlexNet :** A deeper convolutional network with advanced preprocessing, inspired by architectures trained on ImageNet.
 
 Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 
@@ -18,7 +18,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 - **Structure:** Images are organized in subdirectories for each class (`/train/cats`, `/train/dogs`, `/test/cats`, `/test/dogs`).
 - **Preprocessing:**
     - **LeNet:** Images resized to **64x64**, rescaled to [0, 1]. Minimal augmentation (random horizontal flip, rotation).
-    - **Modern CNN:** Images resized to **224x224**, rescaled to [0, 1] then normalized using ImageNet mean `[0.485, 0.456, 0.406]` and std `[0.229, 0.224, 0.225]`. Data augmentation (flip, rotation) applied.
+    - **AlexNet:** Images resized to **224x224**, rescaled to [0, 1] then normalized using ImageNet mean `[0.485, 0.456, 0.406]` and std `[0.229, 0.224, 0.225]`. Data augmentation (flip, rotation) applied.
 
 ---
 
@@ -48,7 +48,7 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 - **Augmentation:** Optional random flip and rotation
 - **Model Complexity:** Fewer layers and parameters, resulting in lower accuracy (~69%) but faster training.
 
-### Modern CNN Model
+### AlexNet Model
 
 - **Input:** 224×224 images
 - **Normalization:** Standard ImageNet normalization applied after rescaling
@@ -57,9 +57,9 @@ Both models were trained on the same Cats vs Dogs dataset for a fair comparison.
 
 
 ### Results & Discussion
-- **LeNet:** Offers a lightweight solution with faster training and inference, achieving ~69% validation accuracy. Suitable for learning and low-resource applications.
+- **LeNet:** Offers a lightweight solution with faster training and inference, achieving ~67% validation accuracy. Suitable for learning and low-resource applications.
 
-- **Modern CNN:** With more capacity and advanced preprocessing, it significantly improves classification performance (~89% validation accuracy) but at the cost of higher computational demands.
+- **Alexnet:** With more capacity and advanced preprocessing, it significantly improves classification performance (~88% validation accuracy) but at the cost of higher computational demands.
 
 - ### Conclusion
 -**This comparative study demonstrates that while LeNet can be adapted to the Cats vs Dogs dataset, modern CNN architectures with appropriate preprocessing and regularization yield superior performance. The choice of architecture depends on the balance between available resources and the desired accuracy.**
